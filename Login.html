@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>ADopera</title>
+</head>
+<body>
+    <Header>
+        <Div class="Logo_y_titulo">
+            <Div class="Logo"></Div>
+            <h2 class="titulo">ADOpera</h2>
+        </Div>
+    </Header>
+
+    <div class="seccionFormulario">
+        <div class="contenedorFormulario">  
+            <form class="formulario" action="procesar_registro.php" method="POST">
+                    <legend>Formulario de registro</legend>
+                    <label>Nombre</label>
+                    <input type="text" name="nombre" required>
+
+                    <label>Apellidos</label>
+                    <input type="text" name="apellidos" required>
+
+                    <label>Fecha de nacimiento</label>
+                    <input type="date" name="fecha_nacimiento" required>
+
+                    <label>Correo electrónico</label>
+                    <input type="email" name="correo" required>
+
+                    <label>Contraseña</label>
+                    <input type="password" name="contraseña" required>
+
+                    <div class="contenedor_Boton_inicio_sesion">
+                        <button onclick="location.href='index.html'" class="boton_inicio_sesion">Volver</button>
+                        <button class="boton_inicio_sesion">Registrarse</button>
+                    </div>
+            </form>
+        </div>       
+    </div>   
+    
+    <link rel="stylesheet" href="StyleLogin.css"> 
+</body>
+</html>
