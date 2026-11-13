@@ -1,0 +1,324 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+}
+
+.contenedor {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+
+
+.sidebar {
+    width: 305px;
+    background-color: #353541;
+    color: white;
+    padding: 30px;
+}
+
+.perfil {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.icono-perfil {
+    width: 130px;
+    height: 130px;
+    background-color: #08bd24;
+    border-radius: 50%;
+    margin: 30px auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 65px;
+}
+
+.perfil h2 {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.perfil p {
+    font-size: 12px;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.menu .activo {
+    color: #08bd24;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.grupo-menu {
+    margin-bottom: 30px;
+}
+
+.grupo-menu h3,
+.opcion-menu h3 {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.grupo-menu h3 span,
+.opcion-menu h3 span {
+    float: right;
+    color: #08bd24;
+    font-size: 20px;
+}
+
+.grupo-menu a {
+    color: #bdbdbd;
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+.opcion-menu {
+    border-top: 3px solid #08bd24;
+    padding-top: 20px;
+    margin-bottom: 25px;
+}
+
+
+
+
+.contenido {
+    flex: 1;
+    min-width: 0;
+    padding: 0 25px 25px;
+}
+
+
+
+.barra-superior {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icono {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 12px;
+}
+
+.circulo-verde {
+    width: 45px;
+    height: 45px;
+    background-color: #08bd24;
+    border-radius: 50%;
+}
+
+.boton-cerrar-sesion {
+    padding: 10px 14px;
+    color: white;
+    background-color: #353541;
+    border: 1px solid #08bd24;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.boton-cerrar-sesion:hover {
+    background-color: #08bd24;
+}
+
+
+.indicadores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 20px;
+    gap: 15px;
+}
+
+.indicador {
+    padding: 5px 15px;
+    border-right: 2px solid #cccccc;
+}
+
+.indicador:last-child {
+    border-right: none;
+}
+
+.indicador p {
+    font-size: 13px;
+    color: #777777;
+}
+
+.indicador h2 {
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.indicador:nth-child(2) h2 {
+    color: #08bd24;
+}
+
+
+
+.tarjeta {
+    background-color: white;
+    padding: 25px;
+    min-width: 0;
+}
+
+.tarjeta h3 {
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+.tarjeta p {
+    font-size: 13px;
+    color: #777777;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+
+
+
+.secciones-superiores {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.secciones-superiores .tarjeta {
+    min-height: 210px;
+}
+
+
+
+.secciones-centro {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 0.55fr;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.secciones-centro .tarjeta {
+    min-height: 365px;
+}
+
+.informacion h3 {
+    color: #08bd24;
+    font-size: 20px;
+}
+
+.informacion p {
+    margin-bottom: 25px;
+}
+
+.estadisticas {
+    text-align: center;
+}
+
+.resumen {
+    text-align: center;
+}
+
+.resumen h2 {
+    color: #08bd24;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.secciones-inferiores {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 0.55fr;
+    gap: 15px;
+}
+
+.secciones-inferiores .tarjeta {
+    min-height: 110px;
+}
+
+.secciones-inferiores h2 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+
+
+@media (max-width: 1100px) {
+
+    .sidebar {
+        width: 230px;
+        padding: 20px;
+    }
+
+    .secciones-superiores {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .secciones-centro {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resumen {
+        grid-column: span 2;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .contenido {
+        padding: 10px;
+    }
+
+    .indicadores {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .secciones-superiores {
+        grid-template-columns: 1fr;
+    }
+
+    .secciones-centro {
+        grid-template-columns: 1fr;
+    }
+
+    .resumen {
+        grid-column: auto;
+    }
+
+    .secciones-inferiores {
+        grid-template-columns: 1fr;
+    }
+
+}

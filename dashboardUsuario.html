@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Administrativo</title>
+    <link rel="stylesheet" href="StyleDashboard.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <aside class="sidebar">
+
+            <div class="perfil">
+                <div class="icono-perfil">👤</div>
+                <h2 id="nombreUsuario"></h2>
+                <p>Bienvenido</p>
+            </div>
+
+            <nav class="menu">
+
+                <a href="#" class="activo">DASHBOARD ❯❯❯</a>
+
+                
+
+                <div class="opcion-menu">
+                    <h3>Propiedades <span>❯</span></h3>
+                </div>
+
+                <div class="opcion-menu">
+                    <h3>Estadisticas <span>❯</span></h3>
+                </div>
+
+                <div class="opcion-menu">
+                    <h3> Facturacion <span>❯</span></h3>
+                </div>
+
+                <div class="opcion-menu">
+                    <h3>PQR <span>❯</span></h3>
+                </div>
+
+            </nav>
+
+        </aside>
+
+
+        <main class="contenido">
+
+            
+            <header class="barra-superior">
+
+                <div class="menu-icono">☰</div>
+
+                <div class="usuario">
+                    <span>Perfil</span>
+                    <div class="circulo-verde"></div>
+                    <button id="cerrarSesion" class="boton-cerrar-sesion" type="button">Cerrar sesión</button>
+                </div>
+
+            </header>
+
+
+            
+            <section class="indicadores">
+
+                <div class="indicador">
+                    <p>Usuarios registrados</p>
+                    <h2>20,897</h2>
+                </div>
+
+                <div class="indicador">
+                    <p>Usuarios activos</p>
+                    <h2>5,894</h2>
+                </div>
+
+                <div class="indicador">
+                    <p>Usuarios nuevos</p>
+                    <h2>3,893</h2>
+                </div>
+
+                <div class="indicador">
+                    <p>Total de registros</p>
+                    <h2>7,896</h2>
+                </div>
+
+            </section>
+
+
+            
+            <section class="secciones-superiores">
+
+                <article class="tarjeta">
+                    <h3>Indicador de rendimiento</h3>
+                    <p>Resumen general del rendimiento.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Indicador de productividad</h3>
+                    <p>Información sobre la productividad.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Estadísticas generales</h3>
+                    <p>Resumen de datos y resultados obtenidos.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Indicador de cumplimiento</h3>
+                    <h2>5,894</h2>
+                    <p>Información del cumplimiento de objetivos.</p>
+                </article>
+
+            </section>
+
+
+           
+            <section class="secciones-centro">
+
+                <article class="tarjeta informacion">
+                    <h3>CONSECTETUER</h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Información general de
+                        la primera sección del dashboard.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Aquí se presenta un
+                        resumen de información importante.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Descripción adicional
+                        de los datos registrados.
+                    </p>
+                </article>
+
+
+                <article class="tarjeta estadisticas">
+                    <h3>Estadísticas de crecimiento</h3>
+                    <p>
+                        Sección destinada al análisis de los
+                        resultados y el comportamiento de los
+                        indicadores.
+                    </p>
+                </article>
+
+
+                <article class="tarjeta resumen">
+                    <h3>Resumen de resultados</h3>
+                    <h2>3,395</h2>
+
+                    <p>Indicador de resultados generales.</p>
+                    <p>Indicador de cumplimiento.</p>
+                    <p>Indicador de productividad.</p>
+                    <p>Indicador de crecimiento.</p>
+                </article>
+
+            </section>
+
+
+           
+            <section class="secciones-inferiores">
+
+                <article class="tarjeta">
+                    <h3>Resumen de usuarios</h3>
+                    <h2>20,897</h2>
+                    <p>Información general de usuarios.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Resumen de actividades</h3>
+                    <h2>20,897</h2>
+                    <p>Información general de actividades.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Indicadores finales</h3>
+                    <p>Resumen de indicadores adicionales.</p>
+                </article>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script>
+        const nombreUsuario = sessionStorage.getItem("nombreUsuario");
+        if (nombreUsuario) {
+            document.getElementById("nombreUsuario").textContent = nombreUsuario;
+        }
+
+        document.getElementById("cerrarSesion").addEventListener("click", function() {
+            sessionStorage.removeItem("nombreUsuario");
+            window.location.href = "InicioSesion.html";
+        });
+    </script>
+</body>
+</html>

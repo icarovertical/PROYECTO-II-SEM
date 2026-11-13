@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #B7D0CB;
+   padding: 0px;
+   margin: 0px;
+ }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #02353C;
+}
+
+.Logo_y_titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}
+.Logo_y_titulo  .Logo{
+    margin: 0px 10px;
+}
+
+.titulo{
+    color: #C2F9F0;
+
+}
+
+.Logo {
+    border-radius: 100px;
+    background-color: #f7f6f6;
+    height: 30px;
+    width: 30px;
+}
+
+.seccionFormulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.formulario{
+    border: 2px solid #02353C;
+    border-radius: 10px;
+    height: 65vh;
+    width: 30vw;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #02353cc6;
+}
+
+.formulario legend{
+    font-size: 20px;
+    font-weight: bold;
+    color: #C2F9F0;
+    MARGIN-BOTTOM: 60PX;
+}
+
+.formulario input{
+    width: 80%;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    padding-left: 10px;
+}
+
+.contenedor_Botones{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.formulario button{
+    width: 80%;
+    height: 30px;
+    margin: 10px 5px ;
+    border-radius: 5px;
+    border: none;
+    background-color: #02353C;
+    color: #C2F9F0;
+    cursor: pointer;
+}
+
+label{
+    font-size: 14px;
+    color: #C2F9F0;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+a{
+    color: #C2F9F0;
+}

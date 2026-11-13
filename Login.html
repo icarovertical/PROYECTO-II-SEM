@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     <title>ADopera</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
 
     <div class="seccionFormulario">
         <div class="contenedorFormulario">  
-            <form class="formulario" action="procesar_registro.php" method="POST">
+            <form id="formRegistro" class="formulario" >
                     <legend>Formulario de registro</legend>
                     <label>Nombre</label>
                     <input type="text" name="nombre" required>
@@ -32,14 +32,17 @@
                     <label>Contraseña</label>
                     <input type="password" name="contraseña" required>
 
-                    <div class="contenedor_Boton_inicio_sesion">
-                        <button onclick="location.href='index.html'" class="boton_inicio_sesion">Volver</button>
-                        <button class="boton_inicio_sesion">Registrarse</button>
+                    <div class="contenedor_Botones">
+                        <button type="button" onclick="location.href='index.html'" class="boton_inicio_sesion">Volver</button>
+                        <button type="submit" class="boton_inicio_sesion">Registrarse</button>
+                    </div>
+                    <div>
+                        <a href="InicioSesion.html">¿Ya tienes una cuenta? Inicia sesión</a>
                     </div>
             </form>
         </div>       
     </div>   
-    
+    <script src="ScripLogin.js"></script>
     <link rel="stylesheet" href="StyleLogin.css"> 
 </body>
 </html>
